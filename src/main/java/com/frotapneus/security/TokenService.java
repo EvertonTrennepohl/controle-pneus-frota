@@ -16,7 +16,7 @@ import com.frotapneus.usuario.domain.Usuario;
 @Service
 public class TokenService {
 	
-	@Value("${api.security.token.secret:chave-secreta-padrao-frota}")
+	@Value("${api.security.token.secret}")
 	private String secret;
 	
 	public String gerarToken (Usuario usuario) {
