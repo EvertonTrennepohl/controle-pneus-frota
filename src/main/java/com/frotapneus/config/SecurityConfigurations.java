@@ -13,6 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import com.frotapneus.autenticacao.controller.AutenticacaoController;
 import com.frotapneus.security.SecurityFilter;
 
 @Configuration
@@ -32,7 +33,7 @@ public class SecurityConfigurations {
 				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authorizeHttpRequests(authorize -> authorize
 					// Liberar as rotas de autenticação (Login)
-					.requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
+					.requestMatchers(HttpMethod.POST, AutenticacaoController.BASE_URL + "/login").permitAll()
 					// Liberar as rotas públicas de documentação do Swagger/OpenAPI
 					.requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
 					.anyRequest().authenticated()

@@ -20,9 +20,11 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping(AutenticacaoController.BASE_URL)
 @Tag(name = "Autenticação", description = "Endpoint de login do sistema")
 public class AutenticacaoController {
+	
+	public static final String BASE_URL = "/api/v1/auth";
 	
 	private final AuthenticationManager authenticationManager;
 	private final TokenService tokenService;
