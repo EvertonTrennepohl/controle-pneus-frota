@@ -14,6 +14,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.frotapneus.autenticacao.controller.AutenticacaoController;
+import com.frotapneus.security.SecurityAuthenticationEntryPoint;
 import com.frotapneus.security.SecurityFilter;
 
 @Configuration
@@ -21,9 +22,11 @@ import com.frotapneus.security.SecurityFilter;
 public class SecurityConfigurations {
 	
 	private final SecurityFilter securityFilter;
+	private final SecurityAuthenticationEntryPoint authenticationEntryPoint;
 	
-	public SecurityConfigurations(SecurityFilter securityFilter) {
+	public SecurityConfigurations(SecurityFilter securityFilter, SecurityAuthenticationEntryPoint authenticationEntryPoint) {
 		this.securityFilter = securityFilter;
+		this.authenticationEntryPoint = authenticationEntryPoint;
 	}
 	
 	@Bean
@@ -37,6 +40,9 @@ public class SecurityConfigurations {
 					// Liberar as rotas públicas de documentação do Swagger/OpenAPI
 					.requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
 					.anyRequest().authenticated()
+				)
+				.exceptionHandling(exception -> exception
+						.authenticationEntryPoint(authenticationEntryPoint)
 				)
 				.addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
 				.build();
