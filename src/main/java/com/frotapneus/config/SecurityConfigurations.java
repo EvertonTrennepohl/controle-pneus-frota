@@ -38,7 +38,16 @@ public class SecurityConfigurations {
 					// Liberar as rotas de autenticação (Login)
 					.requestMatchers(HttpMethod.POST, AutenticacaoController.BASE_URL + "/login").permitAll()
 					// Liberar as rotas públicas de documentação do Swagger/OpenAPI
-					.requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
+					.requestMatchers(
+							"/v3/api-docs",
+							"/v3/api-docs/**", 
+							"/swagger-ui/**", 
+							"/swagger-ui.html",
+							"/swagger-resources/**",
+							"/webjars/**"
+					).permitAll()
+					
+					// Qualquer outra requisição exige autenticação via token
 					.anyRequest().authenticated()
 				)
 				.exceptionHandling(exception -> exception
