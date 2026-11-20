@@ -1,4 +1,4 @@
-package com.frotapneus.config;
+package com.gestaofrota.config;
 
 import java.util.List;
 
@@ -18,9 +18,9 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import com.frotapneus.autenticacao.controller.AutenticacaoController;
-import com.frotapneus.security.SecurityAuthenticationEntryPoint;
-import com.frotapneus.security.SecurityFilter;
+import com.gestaofrota.autenticacao.controller.AutenticacaoController;
+import com.gestaofrota.security.SecurityAuthenticationEntryPoint;
+import com.gestaofrota.security.SecurityFilter;
 
 @Configuration
 @EnableWebSecurity

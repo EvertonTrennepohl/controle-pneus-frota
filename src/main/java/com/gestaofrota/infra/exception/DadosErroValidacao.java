@@ -1,4 +1,4 @@
-package com.frotapneus.infra.exception;
+package com.gestaofrota.infra.exception;
 
 import org.springframework.validation.FieldError;
 

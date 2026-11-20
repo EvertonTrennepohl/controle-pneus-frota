@@ -1,4 +1,4 @@
-package com.frotapneus.security;
+package com.gestaofrota.security;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.frotapneus.infra.exception.DadosErroAutenticacao;
+import com.gestaofrota.infra.exception.DadosErroAutenticacao;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

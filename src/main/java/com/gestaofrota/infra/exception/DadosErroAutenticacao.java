@@ -1,4 +1,4 @@
-package com.frotapneus.infra.exception;
+package com.gestaofrota.infra.exception;
 
 public record DadosErroAutenticacao(
 	int status,

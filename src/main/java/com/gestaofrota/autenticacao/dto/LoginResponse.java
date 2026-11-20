@@ -1,4 +1,4 @@
-package com.frotapneus.autenticacao.dto;
+package com.gestaofrota.autenticacao.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 

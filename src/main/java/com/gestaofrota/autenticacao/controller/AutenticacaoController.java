@@ -1,4 +1,4 @@
-package com.frotapneus.autenticacao.controller;
+package com.gestaofrota.autenticacao.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.frotapneus.autenticacao.dto.LoginRequest;
-import com.frotapneus.autenticacao.dto.LoginResponse;
-import com.frotapneus.security.TokenService;
-import com.frotapneus.usuario.domain.Usuario;
+import com.gestaofrota.autenticacao.dto.LoginRequest;
+import com.gestaofrota.autenticacao.dto.LoginResponse;
+import com.gestaofrota.security.TokenService;
+import com.gestaofrota.usuario.domain.Usuario;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

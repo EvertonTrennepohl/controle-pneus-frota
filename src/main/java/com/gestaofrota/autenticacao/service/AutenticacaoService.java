@@ -1,10 +1,11 @@
-package com.frotapneus.autenticacao.service;
+package com.gestaofrota.autenticacao.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import com.frotapneus.autenticacao.repository.UsuarioRepository;
+
+import com.gestaofrota.autenticacao.repository.UsuarioRepository;
 
 @Service
 public class AutenticacaoService implements UserDetailsService {

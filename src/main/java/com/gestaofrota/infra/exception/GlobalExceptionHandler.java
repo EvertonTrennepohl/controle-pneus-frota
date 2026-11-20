@@ -1,4 +1,4 @@
-package com.frotapneus.infra.exception;
+package com.gestaofrota.infra.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

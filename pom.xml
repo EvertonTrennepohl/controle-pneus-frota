@@ -8,10 +8,10 @@
 		<version>4.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.frotapneus</groupId>
-	<artifactId>controle-pneus-frota</artifactId>
+	<groupId>com.gestaofrota</groupId>
+	<artifactId>gestao-frota-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>controle-pneus-frota</name>
+	<name>gestao-frota-api</name>
 	<description/>
 	<url/>
 	<licenses>

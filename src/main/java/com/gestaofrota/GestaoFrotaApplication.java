@@ -1,13 +1,13 @@
-package com.frotapneus;
+package com.gestaofrota;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ControlePneusFrotaApplication {
+public class GestaoFrotaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ControlePneusFrotaApplication.class, args);
+		SpringApplication.run(GestaoFrotaApplication.class, args);
 	}
 
 }

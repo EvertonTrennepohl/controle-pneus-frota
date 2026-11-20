@@ -1,4 +1,4 @@
-package com.frotapneus.usuario.domain;
+package com.gestaofrota.usuario.domain;
 
 import java.time.LocalDateTime;
 import java.util.Collection;

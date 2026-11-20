@@ -1,4 +1,4 @@
-package com.frotapneus.security;
+package com.gestaofrota.security;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -11,7 +11,7 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.frotapneus.usuario.domain.Usuario;
+import com.gestaofrota.usuario.domain.Usuario;
 
 @Service
 public class TokenService {

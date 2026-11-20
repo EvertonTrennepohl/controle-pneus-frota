@@ -1,4 +1,4 @@
-package com.frotapneus.usuario.domain;
+package com.gestaofrota.usuario.domain;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 

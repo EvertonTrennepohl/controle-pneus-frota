@@ -1,4 +1,4 @@
-package com.frotapneus.security;
+package com.gestaofrota.security;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.frotapneus.autenticacao.service.AutenticacaoService;
+import com.gestaofrota.autenticacao.service.AutenticacaoService;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
